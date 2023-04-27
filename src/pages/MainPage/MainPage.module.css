@@ -1,0 +1,15 @@
+.page {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.page__body {
+    flex: 1 1 1000px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.page__filters {
+    margin: 0 0 20px 0;
+}

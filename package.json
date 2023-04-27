@@ -1,0 +1,55 @@
+{
+  "name": "ugmk_test",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "chart.js": "^4.2.1",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.24",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.1",
+    "json-server": "^0.17.3",
+    "typescript": "^5.0.4",
+    "@typescript-eslint/eslint-plugin": "5.45.0",
+    "@typescript-eslint/parser": "5.45.0",
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.8.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "REACT_API_URL=http://localhost:3002 react-scripts build",
+    "eject": "react-scripts eject",
+    "lint": "eslint --ext=.jsx,.js,.tsx,.ts ./src/",
+    "lint:fix": "eslint --ext=.jsx,.js,.tsx,.ts ./src/ --fix",
+    "dockerize": "docker build -t ugmk_test_app:latest .",
+    "start-container": "docker run --name ugmk_test_app -p 3000:80 -d ugmk_test_app:latest"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

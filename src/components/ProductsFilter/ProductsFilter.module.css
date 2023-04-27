@@ -1,0 +1,22 @@
+.filter {
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+}
+
+.filter__title {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.filter__select {
+    outline: 1px solid rgb(42, 180, 231) !important;
+    border-radius: 5px;
+    margin: 0 0 -2px 0;
+    padding: 2px;
+    font-size: 16px;
+}
